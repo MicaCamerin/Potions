@@ -1,5 +1,6 @@
 import { CartWidget } from './CartWidget';
 
+
 export function NavBar() {
   return (
     <header>
