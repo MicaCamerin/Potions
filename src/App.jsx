@@ -5,7 +5,7 @@ export function App() {
   return (
     <div>
       <NavBar />
-      <ItemListContainer bienvenida="¡Bienvenidx a la tienda de pociciones magicas Potions!" />
+      <ItemListContainer bienvenida="¡Bienvenidx a la tienda de pociones magicas Potions!" />
     </div>
   );
 }
