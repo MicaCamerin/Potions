@@ -14,8 +14,19 @@ export function App() {
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/category/:id" element={<ItemListContainer />} />
         <Route path="/item/:id" element={<ItemDetailContainer />} />
+
+        <Route 
+          path="*"
+          element={
+            <h2 className="error">
+              Página no encontrada
+            </h2>
+          }
+        />
+
       </Routes>
       
+
       <Footer />
     </div>
   );

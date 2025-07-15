@@ -4,9 +4,9 @@ import { CartWidget } from "./CartWidget";
 export function NavBar() {
   return (
     <nav className="nav">
-      <Link to="/category/amor">Pociones de Amor</Link>
-      <Link to="/category/sueño">Pociones de Sueño</Link>
-      <Link to="/category/dinero">Pociones de Dinero</Link>
+      <Link to="/category/amour">Pociones de Amour</Link>
+      <Link to="/category/rêves">Pociones de Rêves</Link>
+      <Link to="/category/argent">Pociones de Argent</Link>
       <CartWidget />
     </nav>
   );

@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 import { ItemList } from "./ItemList";
 
 const productos = [
-  { id: 1, nombre: "Poción de Amor", categoria: "amor" },
-  { id: 2, nombre: "Poción de Sueño", categoria: "sueño" },
-  { id: 3, nombre: "Poción de Dinero", categoria: "dinero" },
-  { id: 4, nombre: "Poción de Energía", categoria: "sueño" },
+  { id: 1, nombre: "Poción Amour", categoria: "amour" },
+  { id: 2, nombre: "Poción Rêves", categoria: "rêves" },
+  { id: 3, nombre: "Poción Argent", categoria: "argent" },
+  { id: 4, nombre: "Poción Cauchemars", categoria: "rêves" },
 ];
 
 export function ItemListContainer() {
@@ -32,7 +32,7 @@ export function ItemListContainer() {
 
   return (
     <div>
-      <h2>{id ? `Categoría: ${id}` : "Todas las pociones"}</h2>
+      <h2>{id ? `Categoría: ${id}` : "Todas las potions"}</h2>
       <ItemList products={items} />
     </div>
   );
