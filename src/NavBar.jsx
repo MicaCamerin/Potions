@@ -1,14 +1,13 @@
-import { CartWidget } from './CartWidget';
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
+import { CartWidget } from "./CartWidget";
 
 export function NavBar() {
   return (
-    <header>
-    <nav className='nav'>
-      <Link to="/recetas">Contacto</Link>
-      <Link to="/nosotros">Nosotros</Link>
+    <nav className="nav">
+      <Link to="/category/amor">Pociones de Amor</Link>
+      <Link to="/category/sueño">Pociones de Sueño</Link>
+      <Link to="/category/dinero">Pociones de Dinero</Link>
       <CartWidget />
     </nav>
-    </header>
   );
 }
