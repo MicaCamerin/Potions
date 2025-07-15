@@ -1,11 +1,16 @@
-import { NavBar } from './NavBar';
-import { ItemListContainer } from './ItemListContainer';
+
+import { Header } from './Header';
+import { Footer } from './Footer';
+import { Main } from "./componentes/Main";
+
+const productos = ["Pocion Amour", "Pocion Reve", "Pocion Argent" ]
 
 export function App() {
   return (
     <div>
-      <NavBar />
-      <ItemListContainer bienvenida="¡Bienvenidx a la tienda de pociones magicas Potions!" />
+      <Header />
+      <Main items ={productos} />
+      <Footer />
     </div>
   );
 }
