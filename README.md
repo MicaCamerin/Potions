@@ -18,12 +18,26 @@ Incluye gestión de productos, carrito de compras, formulario de compra y genera
 ## Estructura del proyecto
 
 src/
-├── components/ # Componentes reutilizables (Header, Footer, Nav, etc.)
-├── pages/ # Páginas principales (Home, Detalle, Carrito, Checkout)
-├── context/ # Context API para gestión global del carrito
-├── firebase/ # Configuración y conexión a Firebase
+├── assets/ # Recursos estáticos (imágenes, logos, etc.)
+│ └── potionLogo.png
+├── componentes/ # Componentes reutilizables y de UI
+│ ├── Item.jsx
+│ ├── ItemDetail.jsx
+│ ├── ItemDetailContainer.jsx
+│ ├── ItemList.jsx
+│ └── ItemListContainer.jsx
+├── contexto/ # Context API para gestión global del carrito
+│ └── CartContext.jsx
 ├── App.jsx # Componente raíz
-└── index.css # Estilos globales
+├── Cart.jsx # Página/Componente del carrito
+├── CartWidget.jsx # Icono del carrito en el header
+├── CheckoutForm.jsx # Formulario de checkout
+├── firebaseConfig.js # Configuración de Firebase
+├── Footer.jsx # Componente Footer
+├── Header.jsx # Componente Header
+├── index.css # Estilos globales
+├── main.jsx # Punto de entrada de la app
+└── NavBar.jsx # Barra de navegación
 
 ---
 
