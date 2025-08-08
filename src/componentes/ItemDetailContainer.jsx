@@ -24,6 +24,7 @@ export function ItemDetailContainer() {
       });
   }, [id]);
 
+  console.log(item);
   return (
     <div>
       {item ? <ItemDetail {...item} /> : <p>Cargando...</p>}

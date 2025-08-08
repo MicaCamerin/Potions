@@ -10,7 +10,9 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <BrowserRouter>
-     <App />
+    <CartProvider>
+      <App />
+    </CartProvider>
     </BrowserRouter>
   </StrictMode>,
 )
