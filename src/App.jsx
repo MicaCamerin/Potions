@@ -4,6 +4,8 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { ItemListContainer } from './componentes/ItemListContainer';
 import { ItemDetailContainer } from './componentes/ItemDetailContainer';
+import { Cart } from './Cart';
+import { CheckoutForm } from "./CheckoutForm";
 
 export function App() {
   return (
@@ -14,6 +16,8 @@ export function App() {
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/category/:id" element={<ItemListContainer />} />
         <Route path="/item/:id" element={<ItemDetailContainer />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<CheckoutForm />} />
 
         <Route 
           path="*"
