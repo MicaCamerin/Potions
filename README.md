@@ -1,12 +1,41 @@
-# React + Vite
+# Potions - E-commerce de Pociones
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con **React** y **Firebase** que permite explorar, agregar al carrito y comprar pociones mágicas.  
+Incluye gestión de productos, carrito de compras, formulario de compra y generación de ticket con ID único en Firebase.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- **React** + Vite
+- **React Router DOM** (navegación)
+- **Firebase Firestore** (base de datos y tickets)
+- **CSS**
+- **JavaScript ES6**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Estructura del proyecto
+
+src/
+├── components/ # Componentes reutilizables (Header, Footer, Nav, etc.)
+├── pages/ # Páginas principales (Home, Detalle, Carrito, Checkout)
+├── context/ # Context API para gestión global del carrito
+├── firebase/ # Configuración y conexión a Firebase
+├── App.jsx # Componente raíz
+└── index.css # Estilos globales
+
+---
+
+## Funcionalidades
+
+- Listado de pociones por categoría
+- Vista de detalle de producto
+- Selección de cantidad y agregado al carrito
+- Carrito persistente durante la sesión
+- Botones para eliminar producto, vaciar carrito y finalizar compra
+- Formulario de checkout con validación
+- Generación de ticket con ID único en Firebase
+
+## Autora
+Creado por Micaela Camerini como parte del curso de JS React, aplicando todos los contenidos vistos hasta el momento.
