@@ -6,23 +6,23 @@ export function Cart() {
 
   return (
     <div className="cart-container">
-      <h2>Carrito</h2>
+      <h2 className='titulo-carrito'>Carrito</h2>
       {cart.length === 0 ? (
         <p>Tu carrito está vacío.</p>
       ) : (
         <div>
           <ul>
             {cart.map((prod) => (
-              <li key={prod.id}>
+              <li key={prod.id} className='lista-carrito'>
                 {prod.nombre} - Cantidad: {prod.cantidad} - Precio unitario: ${prod.precio}
-                <button onClick={() => removeItem(prod.id)}>Eliminar</button>
+                <button onClick={() => removeItem(prod.id)} className="btn-eliminar">Eliminar</button>
               </li>
             ))}
           </ul>
-          <p><strong>Total: ${total}</strong></p>
-          <button onClick={clearCart}>Vaciar carrito</button>
+          <p className='total-carrito'><strong>Total: ${total}</strong></p>
+          <button onClick={clearCart} className="btn-vaciar">Vaciar carrito</button>
           <Link to="/checkout">
-            <button>Finalizar compra</button>
+            <button className="btn-finalizar">Finalizar compra</button>
          </Link>
         </div>
       )}

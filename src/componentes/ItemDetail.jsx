@@ -17,18 +17,18 @@ export function ItemDetail({ id, nombre, categoria, descripcion, precio }) {
       <p><strong>Descripción:</strong> {descripcion}</p>
       <p><strong>Precio:</strong> ${precio}</p>
 
-      <label>
+      <label className="cantidad-label">
         Cantidad:
         <input
           type="number"
           min="1"
           value={cantidad}
           onChange={(e) => setCantidad(Number(e.target.value))}
-          style={{ marginLeft: '8px', width: '60px' }}
+          className="cantidad-input"
         />
       </label>
 
-      <button onClick={handleAgregar} style={{ marginLeft: '16px' }}>
+      <button onClick={handleAgregar} className="btn-agregar">
         Agregar al carrito
       </button>
     </div>

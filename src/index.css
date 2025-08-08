@@ -133,3 +133,124 @@ color: var(--amarillo);
 text-align: center;
 margin-top: 2rem;
 }
+
+/* --- CANTIDADES Y BTN AGREGAR --- */
+.cantidad-label {
+  color: var(--amarillo);
+  font-weight: bold;
+}
+
+.cantidad-input {
+  background-color: var(--negro);
+  color: var(--amarillo);
+  border: 2px solid var(--violeta);
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-top: 10px;
+  padding: 4px;
+  width: 60px;
+  text-align: center;
+}
+
+.btn-agregar {
+  background-color: var(--violeta);
+  color: var(--amarillo);
+  border: none;
+  padding: 8px 14px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-agregar:hover {
+  background-color: #4410a8;
+}
+
+/* --- BOTONES DEL CARRITO --- */
+.btn-eliminar {
+  background-color: transparent;
+  border: 2px solid var(--violeta);
+  color: var(--violeta);
+  padding: 4px 8px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  background-color: var(--violeta);
+  color: var(--amarillo);
+}
+
+.btn-vaciar, .btn-finalizar {
+  background-color: var(--violeta);
+  color: var(--amarillo);
+  border: none;
+  padding: 10px 16px;
+  margin: 20px 8px 0px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-vaciar:hover, .btn-finalizar:hover {
+  background-color: #4410a8;
+}
+
+.lista-carrito {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.total-carrito{
+  margin-left: 20px;
+}
+
+/* --- FORMULARIO --- */
+.formulario {
+  background-color: var(--negro);
+  border: 2px solid var(--violeta);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  color: var(--amarillo);
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  background-color: var(--negro);
+  color: var(--amarillo);
+  border: 2px solid var(--violeta);
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.btn-confirmar {
+  background-color: var(--violeta);
+  color: var(--amarillo);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-confirmar:hover {
+  background-color: #4410a8;
+}
+
+.final-compra {
+  margin-left: 20px;
+}
